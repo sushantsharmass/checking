@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout </title>
+    <style>
+
+        .wrapper {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(4 ,1fr);
+        }
+
+        .span2 {
+            grid-column: span 2;
+        }
+
+        .span3 {
+            /* grid-column-start: 4;
+            grid-row-start: 1; */
+            grid-row-end: span 2;
+        }
+
+          .wrapper > div {
+        background: #eee;
+        padding: 1rem;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="system   span2  ">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At nesciunt accusamus laborum nisi, magnam sequi possimus ullam, ducimus recusandae voluptate delectus aliquam tempora tenetur explicabo dolorem debitis placeat ut consectetur alias, molestias atque modi. Nulla rerum ut aliquid sapiente voluptate excepturi laboriosam esse odio officiis quisquam non ex minima eveniet dolore illo cumque temporibus, incidunt atque eos quis consectetur. Quos natus ad quod id sequi consequuntur maxime incidunt voluptas officia harum aut, omnis rerum quaerat beatae, officiis neque fugiat animi.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ut quos odit quibusdam, eos voluptatibus tenetur iusto qui quidem ducimus. Sunt, non nulla nihil labore saepe minima quisquam eius, nemo modi doloremque ab possimus voluptatem animi porro, vel adipisci exercitationem.
+    </div>
+    <div class="ji span3 ">
+        Lorem ijfojdo dolor sit amet consectetur adipisicing elit. Itaque ullam commodi doloremque, minus vitae beatae nemo aliquid nihil libero quae. Soluta eos corporis sunt voluptatum, accusamus dolorum beatae consectetur fugiat.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem necessitatibus est accusamus amet quasi provident facilis rerum temporibus error minus.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem necessitatibus est accusamus amet quasi provident facilis rerum temporibus error minus.
+    </div>  
+    </div>
+</body>
+</html>
